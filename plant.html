@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Рухомий вазон</title>
+    <link rel="stylesheet" href="plant.css">
+  </head>
+  <body>
+    <main class="scene" aria-label="Анімація рухомого вазона">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="plant" id="plant" aria-label="Вазон">
+        <div class="leaves">
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-center"></span>
+          <span class="leaf leaf-right"></span>
+        </div>
+        <div class="stem"></div>
+        <div class="pot">
+          <div class="pot-rim"></div>
+          <div class="pot-body"></div>
+        </div>
+      </div>
+      <div class="floor" aria-hidden="true"></div>
+    </main>
+
+    <script src="plant.js"></script>
+  </body>
+</html>
