@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Змійка</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app" aria-label="Гра Змійка">
+      <section class="game-shell">
+        <header class="topbar">
+          <h1>Змійка</h1>
+          <a class="home-link" href="index.html">На головну</a>
+          <div class="scoreboard">
+            <span>Рахунок: <strong id="score">0</strong></span>
+            <span>Кращий: <strong id="bestScore">0</strong></span>
+          </div>
+        </header>
+
+        <canvas id="game" width="480" height="480" aria-label="Ігрове поле"></canvas>
+
+        <div class="controls">
+          <button id="startBtn" type="button">Старт</button>
+          <button id="pauseBtn" type="button">Пауза</button>
+          <button id="restartBtn" type="button">Заново</button>
+        </div>
+
+        <p id="status" class="status">Натисни Старт або пробіл.</p>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

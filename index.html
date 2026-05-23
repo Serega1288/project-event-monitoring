@@ -3,32 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Змійка</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Міні сайт</title>
+    <link rel="stylesheet" href="site.css">
   </head>
   <body>
-    <main class="app" aria-label="Гра Змійка">
-      <section class="game-shell">
-        <header class="topbar">
-          <h1>Змійка</h1>
-          <div class="scoreboard">
-            <span>Рахунок: <strong id="score">0</strong></span>
-            <span>Кращий: <strong id="bestScore">0</strong></span>
-          </div>
-        </header>
+    <main class="site">
+      <header class="hero">
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="index.html">Головна</a>
+          <a href="snake.html">Змійка</a>
+          <a href="plant.html">Вазон</a>
+        </nav>
+        <section class="intro">
+          <p class="eyebrow">Стартовий проект</p>
+          <h1>Міні сайт з простими демо</h1>
+          <p>
+            Базова структура для GitHub Pages: головна сторінка, окремі демо,
+            стилі та JavaScript без збірки.
+          </p>
+        </section>
+      </header>
 
-        <canvas id="game" width="480" height="480" aria-label="Ігрове поле"></canvas>
-
-        <div class="controls">
-          <button id="startBtn" type="button">Старт</button>
-          <button id="pauseBtn" type="button">Пауза</button>
-          <button id="restartBtn" type="button">Заново</button>
-        </div>
-
-        <p id="status" class="status">Натисни Старт або пробіл.</p>
+      <section class="cards" aria-label="Демо сторінки">
+        <a class="card" href="snake.html">
+          <span class="card-kicker">Гра</span>
+          <strong>Змійка</strong>
+          <span>Класична мінімальна гра з рахунком.</span>
+        </a>
+        <a class="card" href="plant.html">
+          <span class="card-kicker">Анімація</span>
+          <strong>Рухомий вазон</strong>
+          <span>Проста CSS/JS анімація на окремій сторінці.</span>
+        </a>
       </section>
     </main>
-
-    <script src="game.js"></script>
   </body>
 </html>

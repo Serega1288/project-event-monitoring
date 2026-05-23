@@ -41,6 +41,19 @@ body {
   gap: 16px;
 }
 
+.home-link {
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  border-color: #2dd4bf;
+  color: #ffffff;
+}
+
 h1 {
   margin: 0;
   font-size: 28px;

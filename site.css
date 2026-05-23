@@ -1,0 +1,125 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #15171c;
+  color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(21, 23, 28, 0.72), rgba(21, 23, 28, 0.88)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80") center / cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.hero {
+  width: min(1120px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 24px 0 38px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-bottom: 72px;
+}
+
+.nav a {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 9px 13px;
+  background: rgba(15, 18, 23, 0.52);
+}
+
+.nav a:hover,
+.card:hover {
+  border-color: rgba(94, 234, 212, 0.72);
+}
+
+.intro {
+  max-width: 760px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #5eead4;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(42px, 8vw, 86px);
+  line-height: 0.98;
+}
+
+.intro p:last-child {
+  max-width: 620px;
+  color: #d1d5db;
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.cards {
+  width: min(1120px, calc(100vw - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-self: start;
+  padding-bottom: 32px;
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+  min-height: 160px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(15, 18, 23, 0.78);
+}
+
+.card-kicker {
+  color: #fbbf24;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card strong {
+  font-size: 24px;
+}
+
+.card span:last-child {
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    justify-content: flex-start;
+    padding-bottom: 48px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
